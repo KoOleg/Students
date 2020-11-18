@@ -23,9 +23,8 @@ public class Student extends Person {
     }
 
     private void solveTask(Task task) {
-        if ((task instanceof DragAndDrop) || (task instanceof Test))
-            ((Autochecked) task).runTask();
-        else while (!mentor.checkCode(task)) {}
+        if (task instanceof Autochecked) ((Autochecked) task).runTask();
+        else while (!mentor.checkCode(task));
 
         setCountCompTask(getCountCompTask() + 1);
         setCountCompTaskAllS(getCountCompTaskAllS() + 1);
