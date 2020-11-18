@@ -21,10 +21,10 @@ public class Mentor extends Person implements Staff {
 
     public boolean checkCode(Task task) {
         if (random.nextInt(2000) > 1000) {
-            //System.out.println("Задача " + task.numberTask + " принята");
+            System.out.println("Задача " + task.numberTask + " принята");
             return true;
         }
-        //System.out.println("Задача " + task.numberTask + "не принята");
+        System.out.println("Задача " + task.numberTask + " не принята");
         return false;
     }
 }
